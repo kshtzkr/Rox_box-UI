@@ -121,13 +121,17 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    border-color: transparent;
-    background-color: transparent;
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -309,4 +313,19 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+@font-face{
+  font-family: comesinhandy;
+  src: url(comesinhandy.eot);
+}
+
+@font-face{
+  font-family: comesinhandy;
+  src: url(comesinhandy.ttf);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
